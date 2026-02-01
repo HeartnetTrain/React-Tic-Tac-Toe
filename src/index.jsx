@@ -1,10 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-// Import design system
-import './styles/tokens.css';
+// Import global styles
 import './styles/global.css';
-import './styles/utilities.css';
 
 // Import app
 import App from './App';
