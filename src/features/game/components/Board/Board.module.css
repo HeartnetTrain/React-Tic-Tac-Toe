@@ -1,0 +1,56 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  min-height: 32px;
+  text-align: center;
+}
+
+.resetButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.resetButton:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+.resetButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.resetButton:focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.boardRow {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 2px solid #999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
